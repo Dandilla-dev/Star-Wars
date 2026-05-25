@@ -6,7 +6,17 @@
     --color-main: #ffc500;
     --color-danger: rgba(204, 3, 35, 0.5);
     --shadow-hero: 0.6rem 0.6rem 0.6rem gray;
+    --color-label: rgba(204, 3, 35, 0.5);
+    --color-sub-cover: #04AA6D;
+    --color-sub-char: white;
 
+}
+.my-input {
+    @apply w-full p-3 border border-gray-300 rounded-sm mt-1.5 mb-4;
+
+}
+.my-label {
+    @apply w-full text-label;
 }
 @layer base {
     body {

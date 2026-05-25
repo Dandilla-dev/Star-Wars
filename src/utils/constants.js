@@ -16,3 +16,14 @@ The original film, later retitled Episode IV: A New Hope, was followed by the se
 All nine films, collectively referred to as the "Skywalker Saga", were nominated for Academy Awards, with Oscars going to the first three releases. Together with the spin-off films Rogue One (2016) and Solo (2018), the combined box office revenue of Star Wars theatrical live-action films equals over US$10 billion, making Star Wars the third-highest-grossing film franchise in cinematic history.`;
 
 export const baseUrl = 'https://sw-info-api.herokuapp.com';
+
+export const fieldsHero = [
+    { key: 'name', label: 'Name' },
+    { key: 'gender', label: 'Gender' },
+    { key: 'birth_year', label: 'Birth year' },
+    { key: 'height', label: 'Height' },
+    { key: 'mass', label: 'Mass' },
+    { key: 'hair_color', label: 'Hair color' },
+    { key: 'skin_color', label: 'Skin color' },
+    { key: 'eye_color', label: 'Eye color' }
+];

@@ -1,4 +1,4 @@
-import '../Contact.css';
+// import '../Contact.css';
 import {baseUrl, periodMonth} from "../utils/constants.js";
 import {useEffect, useState} from "react";
 
@@ -31,25 +31,38 @@ const Contact = () => {
     }, [])
 
     return (
-        <form className="container" onSubmit={e => {
+        <form onSubmit={e => {
             e.preventDefault();
         }}>
-            <label>First Name
-                <input type="text" name="firstname" placeholder="Your name.."/>
+            <div className="p-5 border rounded-sm bg-[#f2f2f2]"  >
+            <label>
+                <div className="my-label">First Name
+                <input className="my-input"
+                       type="text" name="firstname" placeholder="Your name.."/>
+                </div>
+                </label>
+            <label>
+                <div className="my-label">Last Name
+                <input className="my-input" type="text" name="lastname" placeholder="Your last name.."/>
+                </div>
             </label>
-            <label>Last Name
-                <input type="text" name="lastname" placeholder="Your last name.."/>
-            </label>
-            <label>Planet
-                <select name="planet">
+            <label>
+                <div className="my-label">Planet
+                <select className="my-input" name="planet">
                     {planets.map(item => <option value={item} key={item}>{item}</option>)}
                 </select>
+                </div>
             </label>
 
-            <label>Subject
-                <textarea name="subject" placeholder="Write something.."></textarea>
+            <label className="my-label">Subject
+                <div>
+                <textarea className="my-input" name="subject" placeholder="Write something.."></textarea>
+                </div>
             </label>
-            <button type="submit">Submit</button>
+            <button className="bg-sub-cover text-sub-char  border-none rounded-sm cursor-pointer text-center
+             hover:bg-[#45a049]"
+                    type="submit">Submit</button>
+            </div>
         </form>
     )
 }
