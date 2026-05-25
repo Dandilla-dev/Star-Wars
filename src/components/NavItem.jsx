@@ -5,7 +5,10 @@ const NavItem = ({itemTitle}) => {
     const {changePage} = useContext(SWContext);
 
     return (
-        <li onClick={() => changePage(itemTitle)} className="nav-item btn btn-danger mx-1">{itemTitle}</li>
+        <div onClick={() => changePage(itemTitle)}
+             className="bg-danger rounded-md px-3 cursor-pointer text-center
+             hover:bg-red-500 hover:text-white"
+        >{itemTitle}</div>
     )
 }
 
